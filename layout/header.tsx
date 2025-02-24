@@ -29,7 +29,7 @@ export default function Header() {
       <nav className="container flex justify-between items-center">
         <div className="flex items-center gap-4">
           <Link href={"/"} className="flex flex-row items-center gap-2 w-full">
-            <span className="text-2xl font-bold text-primary hidden sm:block">
+            <span className="text-2xl font-bold text-primary sm:block">
               Posts Application
             </span>
           </Link>

@@ -30,9 +30,11 @@ const HomeTopBar = ({
   const { accessToken } = useAuth();
 
   return (
-    <div className="flex items-center ">
+    <div className="flex items-center flex-col gap-2 md:flex-row ">
       <span className="text-md font-bold"> Posts </span>
-      <div className="ml-auto flex items-center gap-2">
+      <div className="md:ml-auto flex items-center gap-2 flex-col md:flex-row">
+        <div className="flex flex-row gap-2"> 
+
         <Button onClick={onReset} variant={"outline"}>
           Reset
         </Button>
@@ -63,7 +65,9 @@ const HomeTopBar = ({
             ))}
           </DropdownMenuContent>
         </DropdownMenu>
+        </div>
 
+        <div className="gap-2 flex flex-row">
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <Button
@@ -93,6 +97,7 @@ const HomeTopBar = ({
             </Button>
           </Link>
         )}
+        </div>
       </div>
     </div>
   );
