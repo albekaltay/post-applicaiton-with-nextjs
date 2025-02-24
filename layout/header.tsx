@@ -1,7 +1,6 @@
 "use client";
 // next
 import Link from "next/link";
-import Image from "next/image";
 //
 import {
   DropdownMenu,
@@ -30,13 +29,6 @@ export default function Header() {
       <nav className="container flex justify-between items-center">
         <div className="flex items-center gap-4">
           <Link href={"/"} className="flex flex-row items-center gap-2 w-full">
-            <Image
-              alt="Babonbo Logo"
-              src="/assets/images/babonbo_logo.png"
-              height={120}
-              width={120}
-            />
-
             <span className="text-2xl font-bold text-primary hidden sm:block">
               Posts Application
             </span>

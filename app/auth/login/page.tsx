@@ -1,7 +1,7 @@
 import { LoginView } from "@/views";
 
 export const metadata = {
-  title: 'Login | Babonbo',
+  title: 'Login | Post App',
 
 }
 
