@@ -59,6 +59,7 @@ const HomeTopBar = ({
               <DropdownMenuItem
                 key={index}
                 onClick={() => onSelectedCategory(category)}
+                className="cursor-pointer"
               >
                 {category.charAt(0).toUpperCase() + category.slice(1)}
               </DropdownMenuItem>
@@ -78,10 +79,10 @@ const HomeTopBar = ({
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end" className="w-44">
-            <DropdownMenuItem onClick={() => onSort("title", "asc")}>
+            <DropdownMenuItem onClick={() => onSort("title", "asc")} className="cursor-pointer">
               Title (A-Z)
             </DropdownMenuItem>
-            <DropdownMenuItem onClick={() => onSort("title", "desc")}>
+            <DropdownMenuItem onClick={() => onSort("title", "desc")} className="cursor-pointer">
               Title (Z-A)
             </DropdownMenuItem>
           </DropdownMenuContent>

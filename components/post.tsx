@@ -72,15 +72,15 @@ const Post = ({ id, title, body, likes, dislikes, views }: PostProps) => {
                 </DropdownMenuTrigger>
                 <DropdownMenuContent align="end">
                   <Link href={`posts/${id}`}>
-                    <DropdownMenuItem>Detail</DropdownMenuItem>
+                    <DropdownMenuItem className="cursor-pointer">Detail</DropdownMenuItem>
                   </Link>
                   {accessToken && (
                     <>
                       <Link href={`/posts/${id}/edit`}>
-                        <DropdownMenuItem>Edit</DropdownMenuItem>
+                        <DropdownMenuItem className="cursor-pointer">Edit</DropdownMenuItem>
                       </Link>
 
-                      <DropdownMenuItem onClick={handleDelete}>
+                      <DropdownMenuItem onClick={handleDelete} className="cursor-pointer">
                         Delete
                       </DropdownMenuItem>
                     </>

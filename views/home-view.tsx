@@ -19,10 +19,10 @@ const HomeView = () => {
     <AppContainer isController={false}>
       <div className="max-w-4xl mx-auto px-4 py-8">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-800 mb-4">
+          <h1 className="text-4xl font-bold text-gray-800 dark:text-gray-400 mb-4">
             Most popular posts from the last 30 posts
           </h1>
-          <p className="text-gray-600">
+          <p className="text-gray-600 dark:text-gray-400">
             Discover the most engaging posts from our community.
           </p>
         </div>

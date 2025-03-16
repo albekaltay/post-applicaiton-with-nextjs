@@ -205,7 +205,7 @@ const PostDetailView = () => {
                         Please{" "}
                         <a
                           href="/auth/login"
-                          className="text-primary hover:text-rose-700 font-medium underline underline-offset-4"
+                          className="text-primary dark:text-gray-600 hover:text-rose-700 font-medium underline underline-offset-4"
                         >
                           login
                         </a>{" "}

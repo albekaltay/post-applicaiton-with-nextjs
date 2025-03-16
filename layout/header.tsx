@@ -59,7 +59,7 @@ export default function Header() {
                 </DropdownMenuLabel>
                 <DropdownMenuSeparator />
                 <Link href={"/auth/login"}>
-                  <DropdownMenuItem onClick={logout}>
+                  <DropdownMenuItem onClick={logout} className="cursor-pointer">
                     Logout
                   </DropdownMenuItem>
                 </Link>
